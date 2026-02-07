@@ -57,5 +57,3 @@ This step-by-step process ensures meaningful grouping of Netflix content based o
   Name        : Thotakura Anudeepthi 
   Project     : Artificial Intelligence Final Project 
   Institution : KL UNIVERSITY
-## Author
-**Anudeepthi**
