@@ -1,0 +1,21 @@
+==> Movie Recommendation Output
+      -> suggest_titles("3 Idiots")
+      o/p: ['Dil Dhadakne Do', 'PK', 'Upstarts']
+  -- The suggest_titles("3 Idiots") function returns a list of movies that are closely related based on content similarity.
+  -- The recommended titles “Dil Dhadakne Do”, “PK”, and “Upstarts” belong to similar thematic and genre groups, showing that the recommendation system works effectively.
+
+==> Clustered Netflix Content Output
+    -> df[['title', 'type', 'listed_in', 'group_id']].head(10).reset_index(drop=True)
+     o/p:    title	type	    listed_in	                                          group_id
+          0	 3%	    TV Show	  International TV Shows, TV Dramas, TV Sci-Fi &...	  1
+          1	 7:19  	Movie	    Dramas, International Movies	                      3
+          2	 23:59	Movie	    Horror Movies, International Movies                	3
+          3	 9	    Movie	    Action & Adventure, Independent Movies, Sci-Fi...	  3
+          4	 21    	Movie	    Dramas	                                            3
+          5	 46	    TV Show  	International TV Shows, TV Dramas, TV Mysteries	    1
+          6	 122	  Movie	    Horror Movies, International Movies                	3
+          7	 187	  Movie	    Dramas	                                            3
+          8	 706	  Movie	    Horror Movies, International Movies	                3
+          9	 1920	  Movie	    Horror Movies, International Movies, Thrillers	    3
+  -- The displayed table shows the first 10 Netflix titles along with their content type, genre, and assigned group ID.
+  -- Titles with similar genres are grouped under the same group_id, indicating successful clustering of Netflix content based on textual features.
